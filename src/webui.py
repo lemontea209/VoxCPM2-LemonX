@@ -4830,7 +4830,10 @@ def create_demo_interface(demo: VoxCPMDemo):
             rgb(255, 255, 255) 36%,
             rgba(255, 255, 255, 0.9) 38%,
             rgba(255, 255, 255, 0.15) 43%,
-            var(--button-primary-background-fill, rgb(5, 150, 105)) 46%) !important;
+            /* 必须是纯色：--button-primary-background-fill 装的是渐变，
+               渐变不能当 radial-gradient 的色标，会让整条 background 失效、白点消失。 */
+            var(--checkbox-background-color-selected,
+                var(--primary-600, rgb(5, 150, 105))) 46%) !important;
         /* 圆点描边也跟着主题走，否则底色统一了、描边还是旧绿。 */
         border-color: var(--checkbox-border-color-selected,
             var(--button-primary-border-color, rgb(16, 185, 129))) !important;
@@ -5002,7 +5005,10 @@ def create_demo_interface(demo: VoxCPMDemo):
             rgb(255, 255, 255) 36%,
             rgba(255, 255, 255, 0.9) 38%,
             rgba(255, 255, 255, 0.15) 43%,
-            var(--button-primary-background-fill, rgb(5, 150, 105)) 46%) !important;
+            /* 必须是纯色：--button-primary-background-fill 装的是渐变，
+               渐变不能当 radial-gradient 的色标，会让整条 background 失效、白点消失。 */
+            var(--checkbox-background-color-selected,
+                var(--primary-600, rgb(5, 150, 105))) 46%) !important;
         /* 圆点描边也跟着主题走，否则底色统一了、描边还是旧绿。 */
         border-color: var(--checkbox-border-color-selected,
             var(--button-primary-border-color, rgb(16, 185, 129))) !important;
