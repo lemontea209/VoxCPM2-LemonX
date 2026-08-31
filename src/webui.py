@@ -2597,9 +2597,15 @@ class TaskManager:
         queued = sum(1 for t in tasks if t["status"] == "排队")
         running = sum(1 for t in tasks if t["status"] == "生成中")
 
-        summary_md = (
-            f"成功：{success} | 失败：{failed} | 排队：{queued} | 输出目录：`{OUTPUTPUTS}`"
-        )
+        # 闲置（无任务）时只显示计数，不显示输出目录：路径很长，闲置状态下
+        # 既没有信息量，又会被渲染成带横向滚动条的代码块。
+        if tasks:
+            summary_md = (
+                f"成功：{success} | 失败：{failed} | 排队：{queued}\n\n"
+                f"输出目录：`{OUTPUTPUTS}`"
+            )
+        else:
+            summary_md = f"成功：{success} | 失败：{failed} | 排队：{queued}"
 
         if tasks:
             rows = ["| 提交时间 | 状态 | 开始时间 | 耗时 | 备注 |", "| --- | --- | --- | --- | --- |"]
@@ -3119,7 +3125,14 @@ def create_demo_interface(demo: VoxCPMDemo):
         --lemon-on-muted: var(--body-text-color-subdued, #d0d0d6);   /* 禁用态文字 */
         --lemon-on-menu: var(--body-text-color, #ffffff);   /* 右键菜单文字 */
     }
-    #page-local-dubbing .queue-table { max-height: 250px; overflow-y: auto; }
+    /* 任务表格随任务数自然增长，不限高、不出滚动条。 */
+    #page-local-dubbing .queue-table { max-height: none; overflow-y: visible; }
+    /* 输出目录是长路径，让它折行显示，不要变成带横向滚动条的代码块。 */
+    #local-task-results-panel code {
+        white-space: normal !important;
+        word-break: break-all;
+        overflow-x: visible !important;
+    }
     #page-local-dubbing .queue-table table { width: 100% !important; table-layout: auto; }
     #page-local-dubbing .small_checkbox { display: flex;  height: 40px; }
     /* 生成历史：紧凑卡片，单行展示，节省空间，一页可放更多条目 */
