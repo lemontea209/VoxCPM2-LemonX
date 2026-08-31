@@ -15,8 +15,8 @@
 完整整合包约 **17.9 GB**（含模型权重与 Python 运行时），超出 GitHub 的容量限制，
 因此**不放在本仓库内**，请从网盘下载：
 
-- 百度网盘：`【链接: https://pan.baidu.com/s/11Bj9xwqtaLczFrSEcKUUVw?pwd=n6th 提取码: n6th 】`
-- 夸克网盘：`【链接：https://pan.quark.cn/s/5735ea8c9816?pwd=KzkP 提取码：KzkP】`
+- **百度网盘：** https://pan.baidu.com/s/11Bj9xwqtaLczFrSEcKUUVw?pwd=n6th　提取码 `n6th`
+- **夸克网盘：** https://pan.quark.cn/s/5735ea8c9816?pwd=KzkP　提取码 `KzkP`
 
 **本仓库只存放本修改版的源码与许可证文档**，供查阅、核对与二次开发：
 
