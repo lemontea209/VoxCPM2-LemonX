@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# 运行产物
+logs/
+outputs/
+generated_history/
+*.log
+
+# 本机数据（音色库、密钥缓存等，不应入库）
+voices/
+*.dpapi
+
+# 运行时与模型（体积过大，走网盘分发）
+build_venv/
+models/
+hf_download/
+ffmpeg/
+
+# 打包产物
+*.7z
+*.zip
+win-unpacked/
+
+# 系统
+Thumbs.db
+desktop.ini
+.DS_Store
