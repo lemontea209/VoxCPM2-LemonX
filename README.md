@@ -180,6 +180,11 @@
 | YZY 启动器与原整合包 | [余子越](https://space.bilibili.com/3493266750179909) | 经作者单独许可 |
 | 本修改版 | [Lemon-X](https://space.bilibili.com/3690974001761138) | 见下 |
 
+本项目为独立开源项目，并非 OpenBMB、ModelBest 或 MiniMax 官方产品。
+VoxCPM2 相关代码及模型遵循其原始 Apache License 2.0。
+MiniMax 功能通过 MiniMax 官方 API 提供，用户需自行申请并配置 API Key；MiniMax 服务受其自身服务条款约束，不属于本项目 Apache-2.0 授权范围。
+“VoxCPM”、“MiniMax”及相关名称和商标归各自权利人所有。
+
 余子越已单独授权本修改版发布到 GitHub。该授权为**专项许可**，
 不表示余子越的独立代码已按开源许可证授权，也不自动向第三方授予更广泛的
 修改、再分发、商用或再许可权利。若你希望在本整合包基础上继续分发或修改
