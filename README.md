@@ -10,14 +10,6 @@
 
 ---
 
-## 下载
-
-完整整合包**压缩包 7.87 GB，解压后约 15.8 GB**（含模型权重与 Python 运行时），
-远超 GitHub 的容量限制，因此**不放在本仓库内**，请从网盘下载：
-
-- **百度网盘：** https://pan.baidu.com/s/1T57YXQdySimp-oqYX_Os6A?pwd=cb8i 提取码 `cb8i`
-- **夸克网盘：** https://pan.quark.cn/s/95b8070b5f4f?pwd=hsdc　提取码 `hsdc`
-
 **本仓库只存放本修改版的源码与许可证文档**，供查阅、核对与二次开发：
 
 | 目录 | 内容 |
@@ -241,3 +233,11 @@ OpenBMB 的 VoxCPM2 代码与权重可商用，**不等于整个整合包可商�
 
 若你认为本整合包侵犯了你的权益或违反了某开源协议，
 请通过 Issue 或上述联系方式告知，我们将及时处理。
+
+## 下载
+
+完整整合包**压缩包 7.87 GB，解压后约 15.8 GB**（含模型权重与 Python 运行时），
+远超 GitHub 的容量限制，因此**不放在本仓库内**，请从网盘下载：
+
+- **百度网盘：** https://pan.baidu.com/s/1T57YXQdySimp-oqYX_Os6A?pwd=cb8i 提取码 `cb8i`
+- **夸克网盘：** https://pan.quark.cn/s/95b8070b5f4f?pwd=hsdc　提取码 `hsdc`
