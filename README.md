@@ -296,4 +296,4 @@ MiniMax API 服务及用户对该服务的使用，受 MiniMax 官方服务条�
 远超 GitHub 的容量限制，因此**不放在本仓库内**，请从网盘下载：
 
 - **百度网盘：** https://pan.baidu.com/s/1T57YXQdySimp-oqYX_Os6A?pwd=cb8i 提取码 `cb8i`
-- **夸克网盘：** https://pan.quark.cn/s/95b8070b5f4f?pwd=hsdc　提取码 `hsdc`
+- **夸克网盘：** https://pan.quark.cn/s/95b8070b5f4f?pwd=hsdc 提取码 `hsdc`
